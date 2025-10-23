@@ -1,4 +1,9 @@
 import express, { Express, Request, Response } from "express";
+import dotenv from "dotenv";
+
+// Load environment variables BEFORE your internal imports!
+dotenv.config();
+
 import moderationRoutes from "./api/v1/routes/moderationRoutes";
 
 const app: Express = express();
