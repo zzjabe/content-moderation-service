@@ -9,6 +9,7 @@ export const envConfig = {
         privateKey: process.env.FIREBASE_PRIVATE_KEY,
         clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
     },
+    swaggerServerUrl: process.env.SWAGGER_SERVER_URL,
     logLevel: process.env.NODE_ENV === "production" ? "combined" : "dev",
 };
 

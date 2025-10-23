@@ -8,6 +8,7 @@ const server: Server = app.listen(PORT, () => {
     console.log(`Server running on port ${envConfig.port}`);
     console.log(`Environment: ${envConfig.nodeEnv}`);
     console.log(`Morgan log level: ${envConfig.logLevel}`);
+    console.log(`Swagger URL: ${envConfig.swaggerServerUrl}`);
 });
 
 export default server;
